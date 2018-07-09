@@ -1,0 +1,50 @@
+{
+  "name": "tweets",
+  "version": "1.0.0",
+  "description": "Tweets Api",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "start": "node ./application.js"
+  },
+  "dependencies": {
+    "@types/jest": "^22.2.0",
+    "body-parser": "1.18.2",
+    "cors": "^2.8.4",
+    "express": "4.16.2",
+    "lodash": "4.17.4",
+    "mongodb": "2.2.26",
+    "mongoose": "^5.2.1",
+    "mongoose-paginate": "^5.0.3",
+    "shortid": "^2.2.8",
+    "supertest": "^3.0.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "8.5.2",
+    "jest": "^21.2.1"
+  },
+  "main": "app.js",
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**"
+    ],
+    "timers": "real",
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "coverageDirectory": "./test-coverage",
+    "testRegex": "(/tests/.*|\\.(test|spec))\\.(ts|js)$",
+    "moduleFileExtensions": [
+      "js"
+    ]
+  }
+}
