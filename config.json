@@ -1,5 +1,5 @@
 {
-    "dbName": "TweetsDb",
+    "dbName": "TWEETS",
     "port": "8010",
     "dbUrl": "mongodb://127.0.0.1:27017/",
     "pageSize": 10

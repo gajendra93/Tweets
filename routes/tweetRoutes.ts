@@ -1,4 +1,3 @@
-// import * as express from 'express';
 let express = require('express');
 
 import { Tweets } from '../apps/tweets';
